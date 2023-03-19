@@ -43,3 +43,17 @@ plt.show()
 ![Screenshot 2023-03-19 151345](https://user-images.githubusercontent.com/126685886/226166704-08424d6e-0cd9-4f76-8135-d62f46e91e85.png)
 
 In above chart we can see that in comparison to resort hotels, city hotels have more bookings. It’s possible that resort hotels are more expensive than those in city hotels. Also we can see that reservation cancelation is more in city hotels it's more than 50% compare to resort hotel.
+
+```ruby
+plt.figure(figsize=(20,8))
+plt.title('Average Daily Rate In Resort And City Hotel',fontsize=30)
+plt.plot(resort_hotel.index,resort_hotel['adr'],label='Resort Hotel')
+plt.plot(city_hotel.index,city_hotel['adr'],label='City Hotel')
+plt.legend(fontsize=20)
+plt.show()
+
+```
+
+![Screenshot 2023-03-19 151952](https://user-images.githubusercontent.com/126685886/226167053-868546d9-c692-4d0e-af5f-c8abca08a855.png)
+
+The above line graph shows that, on certain days the average daily rate for a city hotel is less than that of resort hotel, and on other days it is even less. It goes without saying that weekends and holidays may sees a rise in resort hotel rates.
