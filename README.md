@@ -88,3 +88,16 @@ plt.show()
 ![5](https://user-images.githubusercontent.com/126685886/226167881-176e0d2e-c757-4c16-b650-1e433834c53c.png)
 
 This bar graph demonstrates that cancellations are most common when prices are greatest and are least common when they are lowest. Therefore, the cost of the accommodation is solely responsible for the cancellation.
+
+```ruby
+can_data=df[df['is_canceled']==1]
+top_10=can_data['country'].value_counts()[:10]
+plt.figure(figsize=(7,7))
+plt.title("Top 10 Country With Reservation Canceling")
+plt.pie(top_10,autopct='%.2f', labels=top_10.index)
+plt.show()
+
+```
+![6](https://user-images.githubusercontent.com/126685886/226168013-8807c382-1ddd-4201-bc62-3a269c0ebb1e.png)
+
+In above chart we try to demonstrate the top 10 countries with the highest reservation cancelations. We can see that Portugal have a highest reservation cancelation that are 68.91% rather other country.
