@@ -101,3 +101,15 @@ plt.show()
 ![6](https://user-images.githubusercontent.com/126685886/226168013-8807c382-1ddd-4201-bc62-3a269c0ebb1e.png)
 
 In above chart we try to demonstrate the top 10 countries with the highest reservation cancelations. We can see that Portugal have a highest reservation cancelation that are 68.91% rather other country.
+
+```ruby
+plt.figure(figsize=(10,4))
+plt.title("Reservation Status")
+plt.bar(['Online TA','Offline TA/TO','Groups','Direct','Corporate','Complementary','Aviation']
+        ,df['market_segment'].value_counts(),color=['Violet', 'pink'])
+        
+```
+
+![7](https://user-images.githubusercontent.com/126685886/226168301-474a87ea-6d3a-4baa-a6b2-f4e66c096a86.png)
+
+In above chart we can see which market segment have highest and lowest hotel reservation. In it we can see that highest hotels reservation done by online travel agent and then next offline travel agent and travel organization so it highest chances that there reservation cancellation are high.
