@@ -57,3 +57,21 @@ plt.show()
 ![Screenshot 2023-03-19 151952](https://user-images.githubusercontent.com/126685886/226167053-868546d9-c692-4d0e-af5f-c8abca08a855.png)
 
 The above line graph shows that, on certain days the average daily rate for a city hotel is less than that of resort hotel, and on other days it is even less. It goes without saying that weekends and holidays may sees a rise in resort hotel rates.
+
+```ruby
+df['month']=df['reservation_status_date'].dt.month
+plt.figure(figsize=(16,8))
+ax=sns.countplot(x='month',hue='is_canceled',data=df,palette='Reds')
+legend_labels,_=ax.get_legend_handles_labels()
+ax.legend(bbox_to_anchor=(1,1))
+plt.title("Reservation Status Per Month",size=20)
+plt.xlabel("Month",size=14)
+plt.ylabel("number of reservations",size=14)
+plt.legend(['not canceled','canceled'])
+plt.show()
+
+```
+
+![4](https://user-images.githubusercontent.com/126685886/226167374-c229b79a-7440-4798-80c8-9d396318cb78.png)
+
+In the above chart we have developed the grouped bar graph to analyze the months with the highest and lowest reservation levels according to reservation status. As can be seen both the number of confirmed reservations and the number of canceled reservations are largest in the month of august. Whereas January is the month with the most canceled reservations.
