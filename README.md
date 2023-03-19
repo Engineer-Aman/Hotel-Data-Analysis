@@ -40,3 +40,6 @@ plt.ylabel("number of reservations",size=14)
 plt.show()
 
 ```
+![Screenshot 2023-03-19 151345](https://user-images.githubusercontent.com/126685886/226166704-08424d6e-0cd9-4f76-8135-d62f46e91e85.png)
+
+In above chart we can see that in comparison to resort hotels, city hotels have more bookings. It’s possible that resort hotels are more expensive than those in city hotels. Also we can see that reservation cancelation is more in city hotels it's more than 50% compare to resort hotel.
