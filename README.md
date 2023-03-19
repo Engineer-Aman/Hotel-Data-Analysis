@@ -9,7 +9,6 @@ Also I attached file in this repository you can download it by quick link here.
 
 ## Business Problem 
 Questions:
-
-1.what are the variables that affect hotels resrvations cancellations? 
-2.how can we make hotels reservations cancelled better? 
-3.how will hotels be assisted in making pricing and promotonal decisions?
+1. what are the variables that affect hotels resrvations cancellations? 
+2. how can we make hotels reservations cancelled better? 
+3. how will hotels be assisted in making pricing and promotonal decisions?
