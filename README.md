@@ -15,7 +15,7 @@ Questions:
 
 ## Analysis Of Data
 
-```
+```ruby
 cancelled=df['is_canceled'].value_counts(normalize=True)
 print(cancelled)
 
