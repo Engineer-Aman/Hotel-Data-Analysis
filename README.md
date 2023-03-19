@@ -75,3 +75,16 @@ plt.show()
 ![4](https://user-images.githubusercontent.com/126685886/226167374-c229b79a-7440-4798-80c8-9d396318cb78.png)
 
 In the above chart we have developed the grouped bar graph to analyze the months with the highest and lowest reservation levels according to reservation status. As can be seen both the number of confirmed reservations and the number of canceled reservations are largest in the month of august. Whereas January is the month with the most canceled reservations.
+
+```ruby
+plt.figure(figsize=(16,8))
+plt.title('Canceled ADR Per Month', fontsize=20)
+sns.barplot('month','adr',data=df[df['is_canceled']==1].groupby('month')[['adr']].sum().reset_index())
+plt.xlabel("Month",size=14)
+plt.ylabel("ADR",size=14)
+plt.show()
+
+```
+![5](https://user-images.githubusercontent.com/126685886/226167881-176e0d2e-c757-4c16-b650-1e433834c53c.png)
+
+This bar graph demonstrates that cancellations are most common when prices are greatest and are least common when they are lowest. Therefore, the cost of the accommodation is solely responsible for the cancellation.
