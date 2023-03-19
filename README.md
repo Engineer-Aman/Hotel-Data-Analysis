@@ -26,3 +26,5 @@ plt.bar(['Not Cancled','Cancled'],df['is_canceled'].value_counts(),color=['cyan'
 ```
 
 ![Screenshot 2023-03-19 150535](https://user-images.githubusercontent.com/126685886/226166305-120c35a4-1754-4fc3-ba4b-95cbaa249779.png)
+
+The bar graph shows the count of reservations that are canceled and those that are not. It is obvious that there are still a significant number of reservations that have not been canceled. There are more than 37% of clients who canceled their reservation, which have a significant impact on the hotels earnings.
