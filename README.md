@@ -12,3 +12,15 @@ Questions:
 1. what are the variables that affect hotels resrvations cancellations? 
 2. how can we make hotels reservations cancelled better? 
 3. how will hotels be assisted in making pricing and promotonal decisions?
+
+## Analysis Of Data
+
+```
+cancelled=df['is_canceled'].value_counts(normalize=True)
+print(cancelled)
+
+plt.figure(figsize=(5,4))
+plt.title("Reservation Status")
+plt.bar(['Not Cancled','Cancled'],df['is_canceled'].value_counts(),color=['cyan','Yellow',])
+
+```
