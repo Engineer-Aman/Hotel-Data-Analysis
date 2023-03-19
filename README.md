@@ -132,6 +132,6 @@ plt.show()
 In above chart we can observe the reservation status by segment. We can see that online travel agent have highest reservation number where in it more than 50% reservations get canceled by them. Also we can observe that after Online TA, offline TA/TO have highest reservation number and in it near 40% of reservation get canceled. In the entire segment Aviation segment have less number of reservation.
 
 ## Hypothesis:
-1. More cancellations occure when prices are high 
+1. More cancellations occure when prices are high. 
 2. When there is a longer waiting list customers tend to cancle more frequently. 
 3. The majority of clients are coming from offline travel agent to make their reservations.
