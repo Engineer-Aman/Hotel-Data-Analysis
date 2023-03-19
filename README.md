@@ -113,3 +113,20 @@ plt.bar(['Online TA','Offline TA/TO','Groups','Direct','Corporate','Complementar
 ![7](https://user-images.githubusercontent.com/126685886/226168301-474a87ea-6d3a-4baa-a6b2-f4e66c096a86.png)
 
 In above chart we can see which market segment have highest and lowest hotel reservation. In it we can see that highest hotels reservation done by online travel agent and then next offline travel agent and travel organization so it highest chances that there reservation cancellation are high.
+
+```ruby
+plt.figure(figsize=(16,8))
+ax=sns.countplot(x=df['market_segment'],hue='is_canceled',data=df,palette='Greens')
+legend_labels,_=ax.get_legend_handles_labels()
+ax.legend(bbox_to_anchor=(1,1))
+plt.title("Reservation Status by segment",size=20)
+plt.xlabel("Segment",size=14)
+plt.ylabel("number of reservations",size=14)
+plt.legend(['not canceled','canceled'])
+plt.show()
+
+```
+
+![8](https://user-images.githubusercontent.com/126685886/226171467-dd40f6a9-02b1-484d-b4ef-a18c5032d93e.png)
+
+In above chart we can observe the reservation status by segment. We can see that online travel agent have highest reservation number where in it more than 50% reservations get canceled by them. Also we can observe that after Online TA, offline TA/TO have highest reservation number and in it near 40% of reservation get canceled. In the entire segment Aviation segment have less number of reservation.
